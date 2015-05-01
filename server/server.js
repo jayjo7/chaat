@@ -276,7 +276,7 @@ Meteor.methods({
         		}
         		Meteor.npmRequire('stripe');
         		//var secret = Meteor.settings.private.stripe.testSecretKey;
-				var stripe = Meteor.npmRequire('stripe')("sk_test_FOE0JIyoYYkuClShTVAV5hQB");
+				var stripe = Meteor.npmRequire('stripe')("sk_live_3QSn2jv6MtLdeptDmiYlYptO");
                 stripe.setApiVersion('2015-04-07');
                 console.log(sessionId + " :To Payment system: order.Total = "    + order.Total);
 
