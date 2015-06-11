@@ -8,11 +8,10 @@
     <div class="tv-MainHeaderLeft" align="left">{{getSettings 'dm_left_message'}}</div>
     <div class="tv-MainHeaderCenter" align="center">
 
-    	Welcome to <br/>Chowpaaty Chaat
+    	{{getSettings 'dm_title'}}
 
     </div>
-    <div class="tv-MainHeaderRight" align="right">Order Online!<br/> Pick it up here!<br/>
-    www.chowpaatychaat.com</div>
+    <div class="tv-MainHeaderRight" align="right">{{getSettings 'dm_right_message'}}</div>
     <div class="TV-notification">{{newOrderCount}}</div>
   </div>
   <hr>
@@ -31,12 +30,12 @@
             	<div class="tv-category-title">{{Value}}</div>
             </div>
 
-			    		{{#each menuMulti Value }}
+			    		{{#each menu Value }}
 
  
 			    					<div class="tv-itemBlock ">
 
-			    						        <div class="tv-item-Title" >{{Name}}</div>
+			    						        <div class="tv-item-Title" >{{{prune Name 50 false}}}</div>
 			    						      {{#if isSpecial fontWeight}}
         										<div class="tv-special">Special</div>
 								             {{/if}}

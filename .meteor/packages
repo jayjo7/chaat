@@ -13,8 +13,16 @@ underscore
 sacha:spin
 iron:router
 meteorhacks:npm
-jquery
-mrgalaxy:stripe
 
 
 npm-container
+jquery
+force-ssl
+matb33:collection-hooks
+jparker:crypto-base64
+base64
+underscorestring:underscore.string
+nimble:restivus
+okgrow:iron-router-autoscroll
+dandv:http-more
+gfk:mailgun-api
