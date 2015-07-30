@@ -1,3 +1,4 @@
+
 // Items that need to be move to config file
 rootUrl                 = function(orgname)
                           {
@@ -320,28 +321,48 @@ statusDescription = function (StatusCode)
 {
   switch (StatusCode)
   {
-      case STATE_CODE_ONE:
+      case websheets.public.orderStateCode.ONE:
 
-          return STATE_ONE;
+          return websheets.public.orderState.ONE;
           break;
 
-      case STATE_CODE_TWO:
+      case websheets.public.orderStateCode.TWO:
 
-          return STATE_TWO;
+          return websheets.public.orderState.TWO;
           break;
 
-      case STATE_CODE_THREE:
+      case websheets.public.orderStateCode.THREE:
 
-          return STATE_THREE;
+          return websheets.public.orderState.THREE;
           break;
 
-      case STATE_CODE_FOUR:
+      case websheets.public.orderStateCode.FOUR:
 
-          return STATE_FOUR;
+          return websheets.public.orderState.FOUR;
         break;
   }
 
-}                       
+}      
+
+
+  getSetting = function(key, orgname)
+  {
+      //console.log('getSetting: Key = ' + key );
+      //console.log('getSetting: orgname = ' + orgname );
+
+      var settings = Settings.findOne({Key: key, orgname:orgname});
+      if(settings)
+      {
+        //console.log('getSetting: value = ' + settings.Value );
+        return settings.Value;
+      }
+      else
+      {
+        return;
+      }
+  }
+
+
 
 Meteor.methods({
 

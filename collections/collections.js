@@ -2,8 +2,6 @@ Menu = new Mongo.Collection('menu');
 
 Orders = new Mongo.Collection('orders');
 
-OrdersMeta = new Mongo.Collection('ordersMeta');
-
 Cart = new Mongo.Collection('cart');
 
 CartItems = new Mongo.Collection('cartitems');
@@ -15,8 +13,11 @@ Content = new  Mongo.Collection('Content');
 
 Settings = new  Mongo.Collection('Settings');
 
-AppSettings = new  Mongo.Collection('AppSettings');
 
 OrderedItems = new Mongo.Collection('ordereditems');
 
 PaymentInfo = new Mongo.Collection('paymentInfo');
+
+DmMetatData = new Mongo.Collection('dmMetatData');
+
+OrdersMeta = new Mongo.Collection('ordersMeta');
